@@ -1,6 +1,7 @@
 
 .content {
     font-style: italic;
+    font-size: 23px;
 }
 
 .image {
@@ -9,7 +10,8 @@
 }
 
 .horizontal-menu {
-    padding: 0;
+    display: inline;
+    margin-right: 20px;
 }
 
 .horizontal-menu li {
@@ -30,4 +32,16 @@
     padding: 20px;
     border-radius: 12px;
     background-color: #6f64af;
+}
+
+/*adjustments fo rsmaller screens*/
+@media only screen and (min-width: 600px) {
+    .flex-container{
+        padding: 10px;
+    }
+
+    .flex-item{
+        margin: 5px;
+        padding: 10px;
+    }
 }
