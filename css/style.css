@@ -1,4 +1,6 @@
-
+body {
+    line-height: 1.5;
+}
 .content {
     font-style: italic;
     font-size: 35px;
