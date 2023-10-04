@@ -1,3 +1,18 @@
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dca68b;
+    padding: 20px;
+}
+
+.flex-item{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #6f64af;
+}
+
 .content {
     font-style: italic;
 }
@@ -8,7 +23,7 @@
 }
 
 .horizontal-menu {
-    padding: 0; /* Remove any default padding */
+    padding: 0;
 }
 
 .horizontal-menu li {
