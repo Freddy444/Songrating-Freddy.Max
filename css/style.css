@@ -1,4 +1,6 @@
-
+body {
+    line-height: 1.5;
+}
 .content {
     font-style: italic;
     font-size: 35px;
@@ -10,8 +12,9 @@ p {
 }
 
 .image {
-    max-width:100%;
+    width:100%;
     height: auto;
+    display: block;
 }
 
 .horizontal-menu {
@@ -49,6 +52,7 @@ p {
         padding: 10px;
     }
 }
+
 #box {
     box-shadow: 3px 3px 5px #000000;
 }
@@ -56,3 +60,4 @@ p {
 #title{
     text-align: center;
 }
+
