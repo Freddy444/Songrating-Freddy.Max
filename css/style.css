@@ -6,3 +6,12 @@
     width: 300px;
     height: 200px;
 }
+
+.horizontal-menu {
+    padding: 0; /* Remove any default padding */
+}
+
+.horizontal-menu li {
+    display: inline; 
+    margin-right: 10px; 
+}
