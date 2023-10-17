@@ -26,7 +26,11 @@
         $music_artist = $row['artist'];
         $music_song = $row['song'];
         $music_rating = $row['rating'];
+
+        
 ?>
+
+<p>You are logged in as <?php echo $username; ?></p>
 
 <form action="" method="post">
     <input type='hidden' name='id' value=<?php echo $music ?>>
@@ -60,3 +64,8 @@
         exit();
     }
 ?>
+
+<form method="post" action="">
+        <br>
+        <button type="submit" name="Logout">Logout</button>
+</form>
