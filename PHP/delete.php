@@ -27,7 +27,6 @@
         $music_song = $row['song'];
         $music_rating = $row['rating'];
 
-        
 ?>
 
 <p>You are logged in as <?php echo $username; ?></p>
@@ -63,9 +62,7 @@
         header("Location: read.php");
         exit();
     }
-?>
+    ?>
 
-<form method="post" action="">
-        <br>
-        <button type="submit" name="Logout">Logout</button>
-</form>
+    <a href = "logout.php">logout</a>
+
