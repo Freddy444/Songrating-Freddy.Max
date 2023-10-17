@@ -1,6 +1,15 @@
 <?php 
     require_once "db.php";
 
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    #testing connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    else {
+        echo " $username Connected successfully";
+    }
 
     session_start(); 
     if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
