@@ -50,10 +50,7 @@
     <input type="submit" value="Update" name="Update_Table">
 </form>
 
-<form method="post" action="">
-        <br>
-        <button type="submit" name="Logout">Logout</button>
-</form>
+<a href = "PHP/logout.php">logout</a>
 
 <?php
 
@@ -72,7 +69,7 @@
             mysqli_stmt_bind_param($stmt, "sssi", $new_artist, $new_song, $new_rating, $id);
             try {
                 if (mysqli_stmt_execute($stmt) === TRUE) {
-                    header("Location: main.php");
+                    header("Location: read.php");
                     exit();
                 } else {
                     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
