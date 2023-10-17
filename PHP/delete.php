@@ -26,7 +26,6 @@
         $music_artist = $row['artist'];
         $music_song = $row['song'];
         $music_rating = $row['rating'];
-  
 
 ?>
 
@@ -65,4 +64,5 @@
     }
     ?>
 
-<a href = "PHP/logout.php">logout</a>
+    <a href = "logout.php">logout</a>
+

@@ -50,7 +50,7 @@
     <input type="submit" value="Update" name="Update_Table">
 </form>
 
-<a href = "PHP/logout.php">logout</a>
+<a href = "logout.php">logout</a>
 
 
 <?php
