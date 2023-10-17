@@ -60,12 +60,9 @@
         }
         //redrects to songrating page if unsucessful
     } elseif ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["Delete_Cancel"])) {
-        header("Location: read.php");
+        header("Location: login.php");
         exit();
     }
     ?>
 
-<form method="post" action="">
-        <br>
-        <button type="submit" name="Logout">Logout</button>
-</form>
+<a href = "logout.php">logout</a>
