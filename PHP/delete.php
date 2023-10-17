@@ -30,7 +30,11 @@
 ?>
 
 <label>You are logged in as <?php echo $music_username; ?></label>
-
+<br />
+<a href = "logout.php">logout</a>
+<br />
+<h1>Delete Rating</h1>
+<br/>
 <form action="" method="post">
     <input type='hidden' name='id' value=<?php echo $music ?>>
     <input type="submit" value="Cancel" name="Delete_Cancel">
@@ -63,6 +67,3 @@
         exit();
     }
     ?>
-
-    <a href = "logout.php">logout</a>
-

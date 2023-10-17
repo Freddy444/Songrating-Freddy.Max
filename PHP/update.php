@@ -32,25 +32,30 @@
 
 <form action="" method="post">
     <!-- Fixed Username (Cannot be changed) -->
+    <label>You are logged in as <?php echo $music_username; ?></label>
+    <br/>
+    <a href="logout.php">Logout</a>
+    <h1>Update Rating</h1>
     <label>Username: <?php echo $music_username; ?></label>
     <input type="hidden" name="username" value="<?php echo $music_username; ?>">
-    <label> ID </label>
+
     <input type='hidden' name='id' value=<?php echo $music ?>>
-    <br />
     <!-- Editable Fields-->
+    <br/>
     <label>Artist:</label>
     <input type="text" name="artist" value="<?php echo $music_artist; ?>" required><br>
-
+    <br/>
     <label>Song:</label>
     <input type="text" name="song" value="<?php echo $music_song; ?>" required><br>
-
+    <br/>
     <label>Rating:</label>
     <input type="number" name="rating" value="<?php echo $music_rating; ?>" min="1" max="10" required><br>
-
+    <br/>
     <input type="submit" value="Update" name="Update_Table">
-</form>
 
-<a href = "logout.php">logout</a>
+    <a href="read.php"><button type="button">Cancel</button></a>
+
+</form>
 
 
 <?php
