@@ -26,7 +26,6 @@
         $music_artist = $row['artist'];
         $music_song = $row['song'];
         $music_rating = $row['rating'];
-  
 
 ?>
 
@@ -65,7 +64,5 @@
     }
     ?>
 
-<form method="post" action="">
-        <br>
-        <button type="submit" name="Logout">Logout</button>
-</form>
+    <a href = "logout.php">logout</a>
+
