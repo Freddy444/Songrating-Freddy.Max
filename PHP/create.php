@@ -12,6 +12,11 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] === false) {
     exit();
 }
 
+echo '<label>You are logged in as ' . $_SESSION['username'] . '</label>';
+echo '<br />';
+echo '<a href="logout.php">Logout</a>';
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["Add_Song"])) {
     // Get the user's username
     $username = $_SESSION["username"];
@@ -70,4 +75,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["Add_Song"])) {
     <input type="number" name="rating" min="1" max="5" required><br>
 
     <input type="submit" value="Add Song" name="Add_Song">
+    <a href="read.php"><button type="button">Cancel</button></a>
 </form>
