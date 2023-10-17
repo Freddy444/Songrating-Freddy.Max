@@ -29,7 +29,7 @@
 
 ?>
 
-<p>You are logged in as <?php echo $username; ?></p>
+<label>You are logged in as <?php echo $music_username; ?></label>
 
 <form action="" method="post">
     <input type='hidden' name='id' value=<?php echo $music ?>>

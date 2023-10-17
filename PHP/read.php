@@ -53,7 +53,7 @@ $result = mysqli_query($conn, $sql);
 <body>
     <p>You are logged in as <?php echo $username; ?></p>
     <h2>Song ratings</h2>
-    <p><a href="register.php">Rate a Song!</a> </p>
+    <p><a href="create.php">Rate a Song!</a> </p>
 
     <div>
         <table border="1" cellspacing="0" cellpadding="8">
