@@ -103,5 +103,8 @@ $result = mysqli_query($conn, $sql);
         <br>
         <button type="submit" name="Logout">Logout</button>
         </form>
+        <!-- home button-->
+        <br>
+    <a href="../index.html">Back to Home</a>
 </body>
 </html>
