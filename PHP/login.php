@@ -13,7 +13,7 @@
 
     session_start(); 
     if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
-        header("Location: create.php");
+        header("Location: read.php");
         exit();
     }
 
@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION["loggedin"] = true;
             $_SESSION["username"] = $userid;
 
-            header("Location: create.php");
+            header("Location: read.php");
             exit(); // Terminate the script after redirect
         } else {
             echo "Invalid Credentials";

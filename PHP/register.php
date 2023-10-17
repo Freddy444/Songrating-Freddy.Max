@@ -13,7 +13,7 @@
 
     session_start(); 
     if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
-        header("Location: create.php");
+        header("Location: read.php");
         exit();
     }
 
@@ -84,7 +84,7 @@
                                 $_SESSION["loggedin"] = true;
                                 $_SESSION["username"] = $userid;
 
-                                header("Location: create.php"); 
+                                header("Location: read.php"); 
                                 exit(); 
                             } else {
                                 //error if registration fails
