@@ -98,6 +98,10 @@ $result = mysqli_query($conn, $sql);
         <?php endwhile; ?>
         </table>
     </div>
-
+        <!-- logout button (directs to login) -->
+        <form method="post" action="">
+        <br>
+        <button type="submit" name="Logout">Logout</button>
+        </form>
 </body>
 </html>
