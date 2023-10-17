@@ -65,7 +65,4 @@
     }
     ?>
 
-<form method="post" action="">
-        <br>
-        <button type="submit" name="Logout">Logout</button>
-</form>
+<a href = "PHP/logout.php">logout</a>
