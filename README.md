@@ -42,4 +42,3 @@ setup our database again
 
 #Production Environment
 
-https://freddy-max-song-rating.infinityfreeapp.com/
