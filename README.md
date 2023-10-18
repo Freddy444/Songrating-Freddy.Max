@@ -39,3 +39,7 @@ setup our database again
 - Rate A Son: Main song rater runctionality, here you can create song ratings 
 - Update: Update alread rated songs
 - Delete: Deltes rated songs
+
+#Production Environment
+
+https://freddy-max-song-rating.infinityfreeapp.com/
