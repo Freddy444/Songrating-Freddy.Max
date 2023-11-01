@@ -1,0 +1,40 @@
+
+  .displayTitle {
+    font-style: italic;
+    font-size: 35px;
+  }
+  
+  p {
+    font-size: 20px;
+    color: #30284f;
+  }
+  
+
+  .flexItem {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #cf939f;
+  }
+  
+  /* Adjustments for smaller screens */
+  @media only screen and (min-width: 600px) {
+    .flexContainer {
+      padding: 10px;
+    }
+  
+    .flexItem {
+      margin: 5px;
+      padding: 10px;
+    }
+  }
+  
+
+  
+  /* Reset some default styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+
