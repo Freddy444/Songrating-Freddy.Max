@@ -1,3 +1,5 @@
+We would like to use 3/% of our late days to finsih
+
 # Music Rating WebApp
 
 Welcome to the repo for our super cool project! This project is being worked on by Freddy Fabian and Max Oppenheimer. We're diving into the world of web development as part of the COMP 333: Software Engineering course at Wesleyan University.
