@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar{
+  background-color: #5b7a8f; /* Change this to your desired color code */
+  /* Add any other styles you want for the navbar */
+}
+
+body {
+  background-color: black;
+  color: white; /* This sets the text color to white, adjust as needed */
+}
