@@ -1,5 +1,5 @@
 <?php
-class MusicController extends InitCOntroller
+class SongController extends InitController
 {
 
 /**

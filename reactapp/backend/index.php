@@ -36,7 +36,7 @@
 
 	else if ($uri[2] == 'music') {
 		require PROJECT_ROOT_PATH . "/Controller/MusicController.php";
-		$objFeedController = new MusicController();
+		$objFeedController = new SongController();
 		$strMethodName = $uri[3] . 'Action';
 		$objFeedController->{$strMethodName}();
 	}
