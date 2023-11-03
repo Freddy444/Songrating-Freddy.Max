@@ -1,5 +1,5 @@
 <?php
-define ('PROJECT_ROOT_PATH' ,"/../config/db.php");
+define ('PROJECT_ROOT_PATH' ,"./db.php");
 require "/Applications/XAMPP/xamppfiles/htdocs/inc/bootstrap.php";
 
 class MusicModel extends Database
