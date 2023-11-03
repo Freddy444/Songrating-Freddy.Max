@@ -1,5 +1,5 @@
 <?php
-define ('PROJECT_ROOT_PATH', "./db.php");
+require_once 'PROJECT_ROOT_PATH' . "/../config/db.php";
 require "/Applications/XAMPP/xamppfiles/htdocs/inc/bootstrap.php";
 
 class UserModel extends Database
