@@ -2,7 +2,7 @@
 require_once PROJECT_ROOT_PATH . "./models/db.php";
 require "/Applications/XAMPP/xamppfiles/htdocs/inc/bootstrap.php";
 
-class UserModel extends Database
+class UserController extends Database
 {
 
 /**
