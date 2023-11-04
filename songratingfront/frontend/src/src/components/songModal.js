@@ -1,4 +1,7 @@
+import React, { Component } from "react";
+
 import React, { Component, useState } from "react";
+
 import {
   Button,
   Modal,
@@ -9,7 +12,6 @@ import {
   FormGroup,
   Input,
   Label,
-  
 } from "reactstrap";
 
 export default class CustomModal extends Component {
@@ -24,6 +26,7 @@ export default class CustomModal extends Component {
   handleChange = (e) => {
     let { name, value } = e.target;
     const activeItem = { ...this.state.activeItem, [name]: value };
+  
     this.setState({ activeItem });
   };
 
@@ -36,6 +39,65 @@ export default class CustomModal extends Component {
   };
 
   render() {
+    const { onSave } = this.props;
+    return (
+      <Modal isOpen={true} animation={false}>
+        <ModalHeader>Login</ModalHeader>
+        <ModalBody>
+          <Form>
+          <FormGroup>
+              <Label for="firstName">First Name</Label>
+              <Input
+                type="text"
+                id="firstName"
+                name="firstName"
+                value={this.state.activeItem.firstName}
+                onChange={this.handleChange}
+                placeholder=""
+              />
+            </FormGroup>
+            <FormGroup>
+              <Label for="lastName">Last Name</Label>
+              <Input
+                type="text"
+                id="lastName"
+                name="lastName"
+                value={this.state.activeItem.lastName}
+                onChange={this.handleChange}
+                placeholder=""
+              />
+            </FormGroup>
+            <FormGroup>
+              <Label for="username">Username</Label>
+              <Input
+                type="text"
+                id="username"
+                name="username"
+                value={this.state.activeItem.username}
+                onChange={this.handleChange}
+                placeholder=""
+              />
+            </FormGroup>
+            <FormGroup>
+              <Label for="password">Password</Label>
+              <Input
+                type="password"
+                id="password"
+                name="password"
+                value={this.state.activeItem.password}
+                onChange={this.handleChange}
+                placeholder=""
+              />
+            </FormGroup>
+            <FormGroup>
+              <Label for="passwordConfirm">Confirm Password</Label>
+              <Input
+                type="password"
+                id="passwordConfirm"
+                name="passwordConfirm"
+                value={this.state.activeItem.passwordConfirm}
+                onChange={this.handleChange}
+                placeholder=""
     const { toggle, onSave } = this.props;
     return (
       <Modal isOpen={true} toggle={toggle} animation={false}>
