@@ -1,6 +1,6 @@
 <?php
 
-	require "/Applications/XAMPP/xamppfiles/htdocs/inc/bootstrap.php";
+	require "/Applications/XAMPP/xamppfiles/htdocs/Songrating-Freddy.Max/songratingfront/backend/config/boot.php";
 
 	if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
         header('Access-Control-Allow-Origin: http://localhost:3000');
@@ -35,7 +35,7 @@
 	}
 
 	else if ($uri[2] == 'music') {
-		require PROJECT_ROOT_PATH . "/Controller/MusicController.php";
+		require PROJECT_ROOT_PATH . "/Controller/SongController.php";
 		$objFeedController = new MusicController();
 		$strMethodName = $uri[3] . 'Action';
 		$objFeedController->{$strMethodName}();
