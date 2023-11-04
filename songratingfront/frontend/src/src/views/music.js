@@ -2,7 +2,7 @@
 import React, { Component, useEffect, useState } from "react";
 
 import SongModal from "../components/songModal";
-//import RatingModal from "../components/ratingModal";
+import RatingModal from "../components/ratingModal";
 import StatsModal from "../components/statsModal";
 
 import axios from "axios";
