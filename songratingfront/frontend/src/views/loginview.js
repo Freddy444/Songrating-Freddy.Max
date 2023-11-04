@@ -18,7 +18,7 @@ import Cookies from 'js-cookie';
 import { TextField, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { loginUser } from "./apiService";
-import styles from './loginView.module.css';
+import styles from './login.module.css';
 
 export default function LoginView() {
   const [username, setUsername] = useState("");
