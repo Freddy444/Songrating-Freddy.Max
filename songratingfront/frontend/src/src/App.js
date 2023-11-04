@@ -5,8 +5,7 @@ import "./App.css";
 
 import NavigationBar from './nav';
 import Homescreen from './home.js';
-//import Ratings from './components/ratingModal';  <Route exact path="/ratings" element={<Ratings />}></Route>
-
+import Favorite from './views/favorites'
 import Login from './views/login';
 import Signup from './views/signup';
 import Music from './views/music';
@@ -18,6 +17,7 @@ export default  function App() {
         <NavigationBar />
           <Routes>
             <Route exact path="/" element={<Homescreen />}></Route>
+            <Route exact path="/favorite" element={<Favorite />}></Route>
             <Route exact path="/login" element={<Login />}></Route>
             <Route exact path="/newsignup" element={<Signup />}></Route>
             <Route exact path="/music" element={<Music />}></Route>
