@@ -1,4 +1,4 @@
-We would like to use 3/5 of our late days to finsih
+We would like to use 4/5 of our late days to finsih (shall be done by sunday 10am
 
 # Music Rating WebApp
 
