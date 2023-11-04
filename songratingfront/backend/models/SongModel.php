@@ -1,6 +1,6 @@
 <?php
-require_once 'PROJECT_ROOT_PATH' . "/../config/db.php";
-require "/Applications/XAMPP/xamppfiles/htdocs/inc/bootstrap.php";
+require_once 'PROJECT_ROOT_PATH' . "./db.php";
+require "/Applications/XAMPP/xamppfiles/htdocs/Songrating-Freddy.Max/songratingfront/backend/config/boot.php";
 
 class MusicModel extends Database
 {

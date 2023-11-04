@@ -1,32 +1,21 @@
 <?php
-require_once 'PROJECT_ROOT_PATH' . "/../config/db.php";
-require "/Applications/XAMPP/xamppfiles/htdocs/inc/bootstrap.php";
+require_once 'PROJECT_ROOT_PATH' . "./db.php";
+require "/Applications/XAMPP/xamppfiles/htdocs/Songrating-Freddy.Max/songratingfront/backend/config/boot.php";
 
 class UserModel extends Database
 {
 
-    /**
-     * Retrieves username and password of a user.
-     *
-     * @param $username The username to retrieve from the database.
-     *
-     * @return array|false The result of the database query.
-     */
+    
+     /* Retrieves username and password of a user. */
     public function getUserByUsername($username)
     {
         return $this->select("SELECT username, password FROM users WHERE username = ?", ["s", $username]);
     }
 
 
-
-    /**
-     * Creates a new user in the database.
-     *
-     * @param $username The username of the new user.
-     * @param $hashedPassword The hashed password of the new user.
-     *
-     * @return bool True if the user is created successfully, false otherwise.
-     */
+    
+     /* Creates a new user in the database.*/
+ 
     public function createUser($username, $hashedPassword)
     {
         $sql = "INSERT INTO users (username, password) VALUES (?, ?)";
