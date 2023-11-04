@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { TextField, Button } from "@mui/material";
 import axios from "axios";
-import styles from "./registerView.module.css";
+import styles from "./register.module.css";
 import { useNavigate } from "react-router-dom";
 
 export default function RegisterView() {
